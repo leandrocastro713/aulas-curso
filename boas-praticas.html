@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas práticas</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(40, 35, 35);
+        }
+        h2{
+            color:rgb(198, 224, 248);
+        }
+        img{
+            width:400px;
+        }
+        figure img{
+            margin: 0 5px;
+        }
+        figcaption{
+            font-size: x-large;
+            color:rgb(198, 224, 248);
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo para exibir uma imagem.</h2>
+    <img src="source/img/floresta.jpg" alt="Imagem de uma floresta">
+    <h2>Inserindo imagens com o figure.</h2>
+    <figure>
+        <img src="source/img/floresta.jpg" alt="Floresta1">
+        <img src="source/img/floresta.jpg" alt="Floresta2">
+        <figcaption>Floresta de Minas</figcaption>
+    </figure>
+    <picture>
+        <source media="(min-width: 650px)" srcset="source/img/floresta.jpg">
+        <source media="(min-width: 1050px)" srcset="source/img/img2.jpeg">
+        <img src="source/img/img3.jpg" alt="Floresta2">
+    </picture>
+    
+</body>
+</html>

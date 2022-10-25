@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(29, 28, 30);
+        }
+        h1{
+            text-align: center;
+            color: rgb(136, 246, 246);
+        }
+        h2{
+            color: rgb(226, 94, 94);
+        }
+        p{
+            color: aliceblue;
+        }
+        .mario{
+            display: block;
+            position:fixed;
+            right: 15px;
+            top: 500px;
+            width: 200px;
+        }
+        .memoria{
+            display: block;
+            position:relative;
+            margin-top: -30px;
+            margin-bottom: -100px;
+            left: 50px;
+            width: 200px;
+
+        }
+    </style>
+    <title>Desafio 6 - Imagens e Responsividade</title>
+</head>
+<body>
+    <h1>Desafio 6 - Imagens e Responsividade</h1>
+    
+    <h2>Subtitulo1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quasi doloribus velit in praesentium totam repudiandae assumenda ex, labore, deserunt vitae aspernatur itaque dignissimos nostrum! At earum animi repellendus vitae!
+    Explicabo, distinctio provident! In incidunt aliquid nam, id sapiente dolore, quod ut qui tempore dolores veritatis earum voluptas necessitatibus sunt fuga quae dolorum libero itaque sed. Laboriosam sit eius maiores?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore voluptatibus enim voluptates obcaecati, dolores a quos iste quaerat cupiditate harum blanditiis nemo. Maxime, ducimus? Placeat porro non iste dolor! </p>
+
+    <h2>Subtitulo2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, molestias aut magnam modi pariatur in debitis exercitationem nemo, dolore odio delectus impedit, cumque non quas corrupti possimus ratione porro officia!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi fuga perferendis, commodi consequuntur dignissimos velit iste, provident enim, assumenda iure autem obcaecati quos explicabo? Tempora animi recusandae architecto aspernatur dolorum.
+    Deserunt nisi molestias ipsam in, quae voluptas hic sequi placeat ipsum iure amet harum consequuntur incidunt ipsa quis minus reiciendis atque totam. Exercitationem ducimus perferendis veniam. Praesentium officia cupiditate fugiat?</p>
+    
+    <h2>Imagens baixadas</h2>
+    <img class = "memoria"src="source/img/memoria-png1.png" alt="Memória png">
+    <picture>
+        <source media="(min-width: 850px)" srcset="source/img/imagem4.jpg">
+        <source media="(min-width: 650px)" srcset="source/img/imagem1.jpg">
+        <source media="(min-width: 550px)" srcset="source/img/imagem2.jpg">
+        <img src="source/img/imagem3.jpg" alt="imagem img">
+    </picture>
+    <img class = "mario" src="source/img/mario-png2.png" alt="Mario png">
+</body>
+</html>
