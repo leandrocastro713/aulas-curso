@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 28/10 - Tabelas</title>
+    <style>
+        table, th, td{
+            margin: 0 auto;
+            border: 1px solid rgb(186, 185, 185);
+            padding: 10px 25px;
+            border-collapse: collapse;
+        }
+        th{
+            color:rgb(28, 29, 30);
+            background-color: rgb(176, 171, 171);
+            border: 1px solid rgb(74, 27, 27);
+        }
+        h1{
+            text-align: center;
+        }
+        td:hover{
+            background-color: rgba(245, 245, 220, 0.535);
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Desafio de Tabelas #2</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th style="background-color: aquamarine" colspan="2">Ganhos</th>
+                <th style="background-color: bisque" colspan="2">Perdas</th>
+                <th>Observação</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Aluno</td>
+                <td rowspan="3">da Silva</td>
+                <td>R$ 150,00</td>
+                <td>jan/22</td>
+                <td>R$ 30,00</td>
+                <td>jan/22</td>
+                <td rowspan="3">Mês positivo</td>
+                <td rowspan="3"><a href="#"> desafio 1</a></td>
+            </tr>
+            <tr>
+                <td>R$ 200,00</td>
+                <td>jan/22</td>
+                <td>R$ 50,00</td>
+                <td>jan/22</td>
+            </tr>
+            <tr>
+                <td>R$ 130,00</td>
+                <td>jan/22</td>
+                <td>R$ 200,00</td>
+                <td>jan/22</td>
+            
+            </tr>
+                <td rowspan="3">Aluno</td>
+                <td rowspan="3">de souza</td>
+                <td>R$ 80,00</td>
+                <td>jan/22</td>
+                <td>R$ 800,00</td>
+                <td>mar/22</td>
+                <td rowspan="3">Mês negativo</td>
+                <td rowspan="3"><a href="#"> desafio 2</a></td>
+            </tr>
+            <tr>
+                <td>R$ 50,00</td>
+                <td>mar/22</td>
+                <td>R$ 40,00</td>
+                <td>mar/22</td>
+            </tr>
+            <tr>
+                <td>R$ 13,20</td>
+                <td>mar/22</td>
+                <td>R$ 90,00</td>
+                <td>mar/22</td>
+            </tr>
+
+        </tr>
+            <td rowspan="3">Aluno</td>
+            <td rowspan="3">Pereira</td>
+            <td>R$ 2.000,00</td>
+            <td>dez/21</td>
+            <td>R$ 1,00</td>
+            <td>mar/22</td>
+            <td rowspan="3">Mês positivo</td>
+            <td rowspan="3"><a href="#"> desafio 3</a></td>
+        </tr>
+        <tr>
+            <td>R$ 1,00</td>
+            <td>jan/22</td>
+            <td>R$ 1.999,00</td>
+            <td>mar/22</td>
+        </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</body>
+</html>
