@@ -1,0 +1,28 @@
+*{
+    font-family: sans-serif;;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin: 1rem auto;
+    padding: 1rem 1.5rem;
+    font-weight: 900;
+    font-size: 3rem;
+    background-image: radial-gradient(blue, rgb(8, 2, 27));
+    width: 90%;
+    color:rgb(196, 200, 246);
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 60px 5px 60px;
+
+}
+p{
+    margin: 1rem auto;
+    text-align: justify;
+    width: 90%;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}

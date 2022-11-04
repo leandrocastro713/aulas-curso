@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    body: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -24,7 +24,7 @@ h1{
 }
 p{
     animation: descendo 600ms;
-    margin: 0 auto;
+    margin: 1rem auto .0rem;
     padding: 10px;
     font-size: 1.2rem;
     color: aliceblue;
@@ -51,7 +51,8 @@ button{
 }
 button:hover{
     transition: ease 350ms;
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
+    transform:translate(-5px,-3px);
     background-image: linear-gradient(195deg, #6742e1, blue 150%);
     border: 1px solid rgba(0, 255, 255, 0.598);
     box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.415)
