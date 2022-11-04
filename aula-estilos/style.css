@@ -1,19 +1,29 @@
+*{
+    margin: 0;
+    body: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'tempus sans itc regular';
-    background-image: url("../source/img/imagem5.jpg");
+    background-image: url("imagem5.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
 }
 h1{
+    animation: descendo 250ms;
     background-color: rgba(127, 255, 212, 0.573);   
+    font-family:'barrio regular','agency fb', sans-serif;
     background-blend-mode: color;
     font-weight: bolder;
+    height: 50px;
+    padding-top: 8px;
     text-align: center;
     letter-spacing: 10px;
 }
 p{
+    animation: descendo 600ms;
     margin: 0 auto;
     padding: 10px;
     font-size: 1.2rem;
@@ -23,7 +33,8 @@ p{
     width: 80vw;
 }
 button{
-    transition: ease 1300ms;
+    animation: descendo 800ms; 
+    transition: ease 300ms;
     width: 60vw;
     border: 1px solid blue;
     border-radius: 8px;
@@ -32,15 +43,78 @@ button{
     padding: 15px 30px;
     background-color: #d9afd9;
     background-image: linear-gradient(95deg, #6742e1, blue 50%);
-    font-family:'chiller regular' ;
+    font-family:'barrio regular','agency fb', sans-serif;
     font-weight: 300;
     font-size: 2.5rem;
     color: #ffefff;
     cursor: pointer;
 }
 button:hover{
-    transition: ease 1350ms;
+    transition: ease 350ms;
+    letter-spacing: .5rem;
     background-image: linear-gradient(195deg, #6742e1, blue 150%);
     border: 1px solid rgba(0, 255, 255, 0.598);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.415)
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.415)
+}
+#moto{
+    opacity: 0;
+    position: fixed;
+    width: 200px;
+    bottom: 20px;
+    left:-100px;
+}
+.animar{
+    animation: moto-grau ease 3s;
+}
+@keyframes moto-grau{
+    0%{
+        opacity: 0;
+        transform:translateX(110px);
+    }
+    10%{
+        opacity:1;
+        transform:translateX(250px);
+    }
+    55%{
+        transform:translateX(350px);
+        transform:scale(1.08);
+        transform:rotate(300deg);
+    }
+    78%{
+        transform:translateX(550px);
+        transform:scale(0.90);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1.0);
+        transform: translateX(120vw);
+    }
+}
+@keyframes descendo {
+    from{
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    55%{
+        transform:scale(1.08);
+    }
+    78%{
+        transform:scale(0.90);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+}
+@keyframes ani-botao {
+    from{
+        background-image: linear-gradient(195deg, #6742e1 0%, blue 150%);
+    }
+    to{
+        background-image: linear-gradient(35deg, #6742e1 100%, blue 150%);
+    }
 }

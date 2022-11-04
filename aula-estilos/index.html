@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula de Estilo</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1>Site do Cusco-moto</h1>
@@ -15,6 +16,14 @@
     Corporis, non ad! Consequatur fugit repellendus voluptatum fuga eveniet ullam saepe quas excepturi atque. Accusamus eius fugit, nulla deserunt corporis ipsa perferendis, inventore, obcaecati reiciendis praesentium quibusdam natus. Est, repudiandae!
     Corporis in qui at perferendis velit, nulla accusamus totam repudiandae maxime. Ducimus aperiam incidunt necessitatibus blanditiis, laudantium nihil itaque modi enim error omnis magni, soluta dolorum recusandae iste, quisquam impedit?</p>
     <br>
-    <button>Dá-lhe marcha !!!</button>
+    <button id="btn-moto">Dá-lhe marcha !!!</button>
+    <img id="moto" src="dog-bike.png">
 </body>
+<script>
+    var vBtn = document.getElementById("btn-moto");
+    var vMoto = document.getElementById("moto");
+    vBtn.addEventListener("click", ()=> {
+        vMoto.classList.toggle("animar");
+    })
+</script>
 </html>
