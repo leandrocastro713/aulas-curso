@@ -1,0 +1,46 @@
+body{
+    font-family: 'tempus sans itc regular';
+    background-image: url("../source/img/imagem5.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+h1{
+    background-color: rgba(127, 255, 212, 0.573);   
+    background-blend-mode: color;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 10px;
+}
+p{
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 80vw;
+}
+button{
+    transition: ease 1300ms;
+    width: 60vw;
+    border: 1px solid blue;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-color: #d9afd9;
+    background-image: linear-gradient(95deg, #6742e1, blue 50%);
+    font-family:'chiller regular' ;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #ffefff;
+    cursor: pointer;
+}
+button:hover{
+    transition: ease 1350ms;
+    background-image: linear-gradient(195deg, #6742e1, blue 150%);
+    border: 1px solid rgba(0, 255, 255, 0.598);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.415)
+}
