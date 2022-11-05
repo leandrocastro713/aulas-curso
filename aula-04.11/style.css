@@ -7,46 +7,82 @@
 body,html{
     background-image: url("fundo.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-blend-mode: exclusion;
-    background-color: rgb(9, 9, 161);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-color: #130541;
+    overflow-x: hidden;
 }
 header{
     display:flex;
+    position:fixed;
+    top:0;
     align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(95deg, black, blue);
+    justify-content: space-evenly;
+    background-image: linear-gradient(95deg, black, #130541);
     width: 100vw;
     height: 10vh;
-    opacity: 0.4;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+header img{
+    width: 100px;
+    margin: 0 20px;
 }
 h1{
     display: block;
-    color:aliceblue;
+    position:fixed;
+    color:white;
     text-align: center;
+    font-size: 20px;
     align-items: baseline;
-
 }
 .container{
-    margin: 0 auto;
+    margin: 12vh auto 3vh;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-grow: 4;
     width: 90%;
 }
 .container article{
+    background-image: radial-gradient(#130541 50%, #4A358C);
     width: 300px;
+    margin: 5px;
+    margin-bottom: 1.7rem;
     padding: 15px;
+    border-radius: 25px;
 }
 .container img{
+    transition: ease 300ms;
     display: block;
     margin: 0 auto 1rem;
     width: 200px;
     height: 200px;
     overflow: hidden;
 }
-.container p{
-    color:yellowgreen;
-    font-weight: 400;
+.container img:hover{
+    cursor:pointer;
+    transition: ease 500ms;
+    transform:scale(1.2);
+   }
 
+.container p{
+    color:#d8c61f;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+article h3{
+    background-image: radial-gradient(#130541 50%, #4A358C);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:#d8c61f;
+    padding: 5px 10px;
+    margin-top: -15px;
+    margin-left: -25px;
+    margin-bottom: 1rem;
+    background-color: blue;
+    width: 120%;
 }

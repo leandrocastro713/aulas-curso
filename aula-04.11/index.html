@@ -9,60 +9,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Aula 04.11.2023 - Estilos 2 - Pseudo Elementos</title>
+    
+ <script>
+    var audio = new Audio("click.mp4");
+    
+    audio.oncanplaythrough = function(){
+    audio.play();
+    }
+    
+    audio.loop = false;
+    
+    audio.onended = function(){
+    audio.play();
+    }
+    
+    </script>
+    
+    <!-- <input type="image" src="http://button.png" onclick="audio.play()"> -->
+    
 </head>
 <body>
     <header>
+        <img src="question.png" alt="">
         <h1>O que fazer na sexta-feira?</h1> 
+        <img src="question.png" alt="">
     </header> 
     <section class="container">
         <article>
-            <img src="balada.jpg" alt="">
+            <h3>Balada</h3>
+            <img src="balada.jpg" alt="" onclick="audio.play()">
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam nam exercitationem, odio eos modi molestias dignissimos repudiandae accusantium dicta reiciendis pariatur dolorum veniam eligendi ipsum dolore? Amet quas similique minima?
             </p>
         </article>
         <article>
+            <h3>Beber com os amigos</h3>
             <img src="bebendo-com-amigos.jpg" alt="">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam id tempore modi maxime quisquam atque enim similique quos! Fuga commodi earum amet esse quaerat rem molestiae debitis aliquid ipsa repudiandae.
             </p>  
         </article>
         <article>
+            <h3>Brincar com os filhos</h3>
             <img src="brincando-com-filhos.png" alt="">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate nulla magnam nemo, maxime ipsa fugiat voluptas rem doloremque laboriosam, adipisci minus animi sunt vitae cumque nesciunt dolore, quibusdam alias.
             </p> 
         </article>
         <article>
+            <h3>Comemorar</h3>
             <img src="comemorando.jpg" alt="">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde, aspernatur magni repudiandae harum provident. Eum esse similique debitis autem. Rerum praesentium alias neque quo debitis impedit dolorum, necessitatibus autem.
             </p>
         </article>
         <article>
+            <h3>Estudar</h3>
             <img src="estudando-a-noite.jpg" alt="">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sit excepturi fugit expedita distinctio et eum. Dolores totam, soluta voluptatem temporibus at laboriosam error tempora eum fuga, velit, nemo sequi?
             </p>
         </article>
         <article>
+            <h3>Jogar videogame</h3>
             <img src="jogando-videogame.jpg" alt="">
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt sit accusantium veniam quae, modi id, omnis repellendus non quisquam officiis nulla, officia explicabo corrupti ratione architecto laborum voluptate dignissimos consequatur.
             </p>
         </article>
         <article>
+            <h3>Ouvir música</h3>
             <img src="ouvindo-musica.jpg" alt="">
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id veniam ducimus eligendi voluptatibus voluptas minus temporibus, nulla non quas magnam unde pariatur adipisci corrupti eos nam! Blanditiis, eum possimus?
             </p>
         </article>
         <article>
+            <h3>Pizzaria</h3>
             <img src="pizzaria.jpg" alt="">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eius similique ducimus eos molestias placeat facilis, sed fuga reprehenderit a adipisci nemo dolor fugiat natus vero commodi enim esse laborum?
             </p>
         </article>
-    </section>   
+    </section> 
+    <footer>
+        <p>Meu Github</h3>
+    </footer>  
 </body>
 </html>
