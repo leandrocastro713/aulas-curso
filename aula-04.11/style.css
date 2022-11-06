@@ -64,7 +64,8 @@ h1{
 .container img:hover{
     cursor:pointer;
     transition: ease 500ms;
-    transform:scale(1.2);
+    transform:scale(1.03);
+    filter:sepia(.5);
    }
 
 .container p{
@@ -86,3 +87,72 @@ article h3{
     background-color: blue;
     width: 120%;
 }
+#modal_img{
+    float: none;
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 5;
+}
+.modal{
+    transition: ease-in-out 500ms;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    top: 0;
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+}
+    .modal-text{
+        z-index: 8;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        display:block;
+        position:fixed;
+        left: 20px;
+        bottom:20px;
+        padding:40px;
+        color:yellow;
+        min-width: 600px;
+        max-width: 900px;
+        text-shadow: 1px 2px 3px #130541;
+    }
+    .modal-text h3{
+        letter-spacing: 1.2rem;
+    }
+    .modal_content{
+    display: flex;
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+    .modal_active{
+        transition: ease-in-out 500ms;
+        opacity: 1;
+        visibility: visible;
+        align-items: center;
+    }
+    #bt_close{
+        position: absolute;
+        color: white;
+        right: 40px;
+        top: 10px;
+        background-color: black;
+        font-size: large;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid white;
+        z-index: 6;
+    }
+    #bt_close:hover{
+        background-color: rgb(198, 80, 80);
+    }

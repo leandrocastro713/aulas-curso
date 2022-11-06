@@ -10,25 +10,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Aula 04.11.2023 - Estilos 2 - Pseudo Elementos</title>
     
- <script>
-    var audio = new Audio("click.mp3");
-    
-    audio.oncanplaythrough = function(){
-    audio.play();
-    }
-    
-    audio.loop = False;
-    
-    audio.onended = function(){
-    audio.play();
-    }
-    
-    </script>
+ 
     
     <!-- <input type="image" src="http://button.png" onclick="audio.play()"> -->
     
 </head>
 <body>
+    <section class="modal">
+        <div class="modal_content">
+            <img src="balada.jpg" alt="" id="modal_img">
+            <div class="modal-text">
+                <h3 id="modal-h3">Texto do H3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, cupiditate est. Impedit, libero amet. Voluptates, minus enim? Illo iste maiores eaque aut, fugiat doloribus nulla sequi ex exercitationem, veritatis inventore!</p>
+            </div>
+        </div>
+        <span id="bt_close">&times;</span>
+    </section>
+
     <header>
         <img src="question.png" alt="">
         <h1>O que fazer na sexta-feira?</h1> 
@@ -37,56 +35,56 @@
     <section class="container">
         <article>
             <h3>Balada</h3>
-            <img src="balada.jpg" alt="" onclick="audio.play()">
+            <img src="balada.jpg" alt="" onclick="baladaClick()">
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam nam exercitationem, odio eos modi molestias dignissimos repudiandae accusantium dicta reiciendis pariatur dolorum veniam eligendi ipsum dolore? Amet quas similique minima?
             </p>
         </article>
         <article>
             <h3>Beber com os amigos</h3>
-            <img src="bebendo-com-amigos.jpg" alt="">
+            <img src="bebendo-com-amigos.jpg" alt="" onclick="beberClick()">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam id tempore modi maxime quisquam atque enim similique quos! Fuga commodi earum amet esse quaerat rem molestiae debitis aliquid ipsa repudiandae.
             </p>  
         </article>
         <article>
             <h3>Brincar com os filhos</h3>
-            <img src="brincando-com-filhos.png" alt="">
+            <img src="brincando-com-filhos.png" alt="" onclick="brincarClick()">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate nulla magnam nemo, maxime ipsa fugiat voluptas rem doloremque laboriosam, adipisci minus animi sunt vitae cumque nesciunt dolore, quibusdam alias.
             </p> 
         </article>
         <article>
             <h3>Comemorar</h3>
-            <img src="comemorando.jpg" alt="">
+            <img src="comemorando.jpg" alt="" onclick="comemorarClick()">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde, aspernatur magni repudiandae harum provident. Eum esse similique debitis autem. Rerum praesentium alias neque quo debitis impedit dolorum, necessitatibus autem.
             </p>
         </article>
         <article>
             <h3>Estudar</h3>
-            <img src="estudando-a-noite.jpg" alt="">
+            <img src="estudando-a-noite.jpg" alt="" onclick="estudandoClick()">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sit excepturi fugit expedita distinctio et eum. Dolores totam, soluta voluptatem temporibus at laboriosam error tempora eum fuga, velit, nemo sequi?
             </p>
         </article>
         <article>
             <h3>Jogar videogame</h3>
-            <img src="jogando-videogame.jpg" alt="">
+            <img src="jogando-videogame.jpg" alt="" onclick="jogandoClick()">
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt sit accusantium veniam quae, modi id, omnis repellendus non quisquam officiis nulla, officia explicabo corrupti ratione architecto laborum voluptate dignissimos consequatur.
             </p>
         </article>
         <article>
             <h3>Ouvir música</h3>
-            <img src="ouvindo-musica.jpg" alt="">
+            <img src="ouvindo-musica.jpg" alt="" onclick="ouvirClick()">
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id veniam ducimus eligendi voluptatibus voluptas minus temporibus, nulla non quas magnam unde pariatur adipisci corrupti eos nam! Blanditiis, eum possimus?
             </p>
         </article>
         <article>
             <h3>Pizzaria</h3>
-            <img src="pizzaria.jpg" alt="">
+            <img src="pizzaria.jpg" alt="" onclick="pizzariaClick()">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eius similique ducimus eos molestias placeat facilis, sed fuga reprehenderit a adipisci nemo dolor fugiat natus vero commodi enim esse laborum?
             </p>
@@ -95,5 +93,91 @@
     <footer>
         <p>Meu Github</h3>
     </footer>  
+
+    <script>
+        let audio = new Audio("click.mp3");
+        let modal = document.querySelector('.modal');
+        let modalImg = document.querySelector('#modal_img');
+        let modalH3 = document.querySelector('#modal-h3');
+
+        let btClose = document.querySelector('#bt_close');
+
+        btClose.addEventListener('click', function(){
+            modal.classList.toggle('modal_active');
+        });
+        modalImg.addEventListener('click',function(){
+            modal.classList.toggle('modal_active');
+        });
+       
+        audio.loop = False;
+
+        audio.oncanplaythrough = function(){
+            audio.play();
+        }
+       
+        audio.onended = function(){
+            audio.play();
+        }
+    
+        function baladaClick(){
+            audio.play();
+            modalImg.setAttribute('src', 'balada.jpg');
+            modalH3.textContent='Balada';
+            modal.classList.toggle('modal_active');
+        }
+        function beberClick(){
+            audio.play();
+            modalImg.setAttribute('src', 'bebendo-com-amigos.jpg');
+            modalH3.textContent='Beber com os amigos';
+            modal.classList.toggle('modal_active');
+    
+        }
+        function brincarClick(){
+            audio.play();
+            modalImg.setAttribute('src', 'brincando-com-filhos.png');
+            modalH3.innerHTML='Brincar com os filhos';
+            modal.classList.toggle('modal_active');
+    
+        }
+        function comemorarClick(){
+            audio.play();
+            modalImg.setAttribute('src', 'comemorando.jpg');
+            modalH3.textContent='Comemorar';
+            modal.classList.toggle('modal_active');
+    
+        }
+        function estudandoClick(){
+            audio.play();
+            modalImg.setAttribute('src', 'estudando-a-noite.jpg');
+            modalH3.textContent='Estudar';
+            modal.classList.toggle('modal_active');
+    
+        }
+        function jogandoClick(){
+            audio.play();
+            modalImg.setAttribute('src', 'jogando-videogame.jpg');
+            modalH3.textContent='Jogar videogame';
+            modal.classList.toggle('modal_active');
+    
+        }
+        function pizzariaClick(){
+            audio.play();
+            modalImg.setAttribute('src', 'pizzaria.jpg');
+            modalH3.textContent='Pizzaria';
+            modal.classList.toggle('modal_active');
+    
+        }
+        function ouvirClick(){
+            audio.play();
+            modalImg.setAttribute('src', 'ouvindo-musica.jpg');
+            modalH3.textContent='Ouvir música';
+            modal.classList.toggle('modal_active');
+    
+        }
+    
+
+        </script>
+
+
 </body>
 </html>
