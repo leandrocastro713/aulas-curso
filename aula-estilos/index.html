@@ -22,8 +22,34 @@
 <script>
     var vBtn = document.getElementById("btn-moto");
     var vMoto = document.getElementById("moto");
+    var audio = new Audio("click.mp3");
+    var audioMoto = new Audio("moto-acelerando7.mp3");
+
     vBtn.addEventListener("click", ()=> {
+        audio.play();
+        audioMoto.play();
         vMoto.classList.toggle("animar");
     })
+    
+    audio.oncanplaythrough = function(){
+        audio.play();
+    }
+    
+    audio.loop = False;
+    
+    audioMoto.onended = function(){
+        audioMoto.play();
+    }
+
+    audioMoto.oncanplaythrough = function(){
+        audioMoto.play();
+    }
+    
+    audioMoto.loop = False;
+    
+    audioMoto.onended = function(){
+    audioMoto.play();
+    }
+
 </script>
 </html>
