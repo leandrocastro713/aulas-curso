@@ -1,0 +1,16 @@
+.box{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    line-height: 200px;
+    color: rgb(238, 212, 207);
+    text-align: center;
+
+}
+.first-box-color{
+    background-color: brown;
+
+}
+.second-box-color{
+    background-color: blue;
+}
