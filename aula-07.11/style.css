@@ -7,6 +7,9 @@
 h1{
     display: inline;
 }
+body{
+    overflow-x: hidden;
+}
 a{
     color: black;
     text-decoration: none;
@@ -18,7 +21,12 @@ a:visited{
     background-image:linear-gradient(95deg, rgb(223, 238, 246), rgb(35, 202, 79));
     text-align: center;
     height: 180px;
+    width: 100vw;
     display:block;
+    top:0;
+    position:fixed;
+    z-index: 3;
+    opacity:.8;
 }
 .header-top-nav > h1{
     font-family: 'Special Elite', cursive;
@@ -52,12 +60,19 @@ a:visited{
 
 
 .main-content{
-    height: calc(100vh - 200px);
+    height: calc(100vh - 180px);
     background-image: url('https://i.kym-cdn.com/entries/icons/original/000/024/037/maxresdefault_(22).jpg');
+    width:100vw;
+
+    position:relative;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    margin-top: 180px;
 }
 .main-content-container-overlay{
     display:block;
-    height:calc(100vh - 200px);
+    height:calc(100vh - 180px);
     width:100vw;
     background-color: rgba(234, 243, 233, 0.9);
 }
@@ -65,20 +80,24 @@ a:visited{
     /* display:inline-block; */
     float:left;
     width: 30vw;
-    height:calc(100vh - 200px);
-    background-color: rgba(0, 0, 0, 0.227);
+    height:calc(100vh - 180px);
+    /* background-color: rgba(0, 0, 0, 0.227); */
 }
 .right-block{
-    display:inline-block;
+    /* display:inline-block; */
+    float:right;
     width: 70vw;
-    height:calc(100vh - 200px);
-    background-color: rgba(34, 0, 255, 0.254);
+    height:calc(100vh - 180px);
+    /* background-color: rgba(34, 0, 255, 0.254); */
     text-align: center;
     padding: 20px 0;
 }
 .menu-left{
     text-align: center;
     margin-top: 1rem;
+}
+.menu-left::first-line{
+    font-weight: bolder;
 }
 .right-block h2{
     font-size: 20px;
@@ -92,12 +111,18 @@ a:visited{
 }
 .right-block p{
     text-align: justify;
-    padding: 20px
+    line-height: 26px;
+    padding: 5px 30px 5px 20px;
+}
+.right-block p::first-letter{
+    font-size: 40px;
 }
 
 .triple-menu{
     text-align: center;
-    margin-top: 1rem;
+    height:100vh;
+    align-items: center;
+    padding-top: 16rem;
 }
 
 .menu-1{
