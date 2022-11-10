@@ -64,13 +64,28 @@
     </section>
     <script>
         let vMenu1 = document.querySelector('.menu-1');
-        let vMenu2 = document.getElementsByClassName('menu-2');
-        let vMenu3 = document.getElementsByClassName('menu-3');
+        let vMenu2 = document.querySelector('.menu-2');
+        let vMenu3 = document.querySelector('.menu-3');
         let vHeader = document.querySelector('.header-top-nav');
 
-        vMenu1.addEventListener('onmousemove', ()=> {
-            alert('passou');
+        vMenu1.addEventListener('mousemove', ()=> {
+            vHeader.classList.add('stay-menu-1');
+            vHeader.classList.remove('stay-menu-2')
+            vHeader.classList.remove('stay-menu-3') 
         })
+
+        vMenu2.addEventListener('mousemove', ()=> {
+            vHeader.classList.add('stay-menu-2');
+            vHeader.classList.remove('stay-menu-1')
+            vHeader.classList.remove('stay-menu-3')
+        })
+
+        vMenu3.addEventListener('mousemove', ()=> {
+            vHeader.classList.add('stay-menu-3');
+            vHeader.classList.remove('stay-menu-1')
+            vHeader.classList.remove('stay-menu-2')
+        })
+       
     </script>
 </body>
 </html>

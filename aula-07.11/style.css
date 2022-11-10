@@ -177,3 +177,12 @@ a:visited{
     box-shadow: 5px 5px 20px gray;
 
 }
+.stay-menu-1{
+    background-image: linear-gradient(rgb(196, 203, 255)90%, rgb(218, 222, 246),white);
+}
+.stay-menu-2{
+    background-image: linear-gradient(chocolate 90%, rgb(217, 146, 95),white);;
+}
+.stay-menu-3{
+    background-image: linear-gradient(rgb(182, 242, 171) 90%,rgb(208, 244, 202),white);
+}
