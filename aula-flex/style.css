@@ -1,0 +1,34 @@
+*{
+    margin:0; 
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.container{
+    width:90%;
+    height:800px;
+    border: 1px solid tomato;
+    display:flex;
+    align-items:center ;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.inside-container{
+    width:200px;
+    height:200px;
+    border:1px solid blue;
+    align-items: center;
+    display:inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.child-inside{
+    width:45px;
+    height:60px;
+    border:1px solid greenyellow;
+}
+.bisa{
+    display:flex;
+    align-items:center;
+    height: 100vh;
+    justify-content: center;
+}
