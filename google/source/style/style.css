@@ -88,7 +88,7 @@ svg:hover{
     border: 1px solid rgb(209, 207, 207);
     border-radius: 40px;
     margin: 1rem auto;
-    width:50vw;
+    width:500px;
     display:flex;
 }
 .search-container:hover{
@@ -96,13 +96,12 @@ svg:hover{
     box-shadow: -1px -0px 2px silver, 1px 0px 3px silver;
 }
 .input-text{
-    width:50vw;
     height:35px;
     border: 0px solid transparent;
     border-radius: 50px;
-    margin-top: 1px;
+    margin-top: 4px;
     margin-left: 15px;
-    width: 60%;
+    width:68%;
     font-size: 16px;
 }
 
@@ -111,20 +110,14 @@ svg:hover{
 }
 .img-search{
     width:24px;
+    height:24px;
     margin-left: 10px;
     margin-top: 12px;
     filter:opacity(.5);
 }
-.keyboard-search{
-    flex: 0 1 1;
+.keyboard-search, .mic-search, .cam-search{
+    margin-top: 10px;
     width:24px;
-    margin-left: 5px;
-}
-.mic-search{
-    width:24px;
-    margin-left: 5px;
-}
-.cam-search{
-    width:24px;
+    height:24px;
     margin-left: 5px;
 }
