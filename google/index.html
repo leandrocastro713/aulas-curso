@@ -9,6 +9,7 @@
     <title>Google</title>
 </head>
 <body>
+<!-- HEADER      -->
     <header class="header-content">
         <a href="" class="link">Gmail</a>
         <a href="" class="link">Imagens</a>
@@ -28,11 +29,12 @@
         </a>
         <a href="" class="link btn">Fazer login</a>
     </header>
+<!-- MAIN-CONTENT -->
     <section class="main-content">
         <img src="./source/img/googlelogo_color_272x92dp.png" alt="">
         <div class="search-container">
             <img src="./source/img/search.png" alt="" class="img-search">
-            <input type="text" class="input-text">
+            <input list = "search-options" type="text" class="input-text">
             <img src="./source/img/keyboard.png" alt="" class="keyboard-search">
             <img src="./source/img/mic.png" alt="" class="mic-search">
             <img src="source/img/cam.png" alt="" class="cam-search">
@@ -40,12 +42,37 @@
         <div class="buttons">
             <input type="button" class="button" value ="Pesquisa Google">
             <input type="button" class="button" value="Estou com sorte">
-
         </div>
-        
+
+        <datalist id="search-options">
+            <option value="aula">
+            <option value="sistema de cores">
+            <option value="sistema de tv">
+            <option value="aula de sapateado">
+            <option value="aula de violão">
+            <option value="aula de inglês">
+            <option value="músicas">
+        </datalist>
+
     </section>
+<!-- FOOTER      -->
     <footer class="footer-content">
-        footer
+        <div class="footer-1">
+            <p>Brasil</p> 
+        </div>
+        <div class="footer-2">
+            <div class="footer-2-left">
+                <a href="#">Sobre</a>
+                <a href="#">Publicidade</a>
+                <a href="#">Negócios</a>
+                <a href="#">Como funciona a pesquisa</a>
+            </div>
+            <div class="footer-2-right">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Configurações</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
