@@ -102,11 +102,7 @@ svg:hover{
     height:35px;
     border: 0px solid transparent;
     border-radius: 50px;
-<<<<<<< HEAD
     margin-top: 6px;
-=======
-    margin-top: 4px;
->>>>>>> 72f2ca0c98ca043a2285e9d5a85641c058c2faa6
     margin-left: 15px;
     width:68%;
     font-size: 16px;
@@ -117,7 +113,6 @@ svg:hover{
 .img-search, .keyboard-search, .mic-search, .cam-search{
     margin-top: 10px;
     width:24px;
-<<<<<<< HEAD
     height: 24px;
     margin-left: 10px;
     margin-top: 10px;
@@ -155,51 +150,4 @@ svg:hover{
     .search-container{
         width: 500px;
     }
-=======
-    height:24px;
-    margin-left: 5px;
-}
-.img-search{
-    margin-left: 8px;
-    filter:opacity(.5);
-}
-.footer-content{
-    display:flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    height: 96px;
-}
-.footer-1{
-    font-family: arial;
-    color:#70757a;
-    background-color: #f2f2f2;
-    font-size: 15px;
-    padding: 15px 30px;
-    height: 50%;
-    border-bottom:1px solid silver;
-}
-.footer-2{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: arial;
-    font-size: 14px;
-    padding: 0 20px;
-    color:#70757a;
-    background-color: #f2f2f2;
-    height:50%;
-}
-.footer-2-right, .footer-2-left{
-    display:flex;
-    align-items: center;
-}
-.footer-2 a{
-    padding:5px;
-    color:gray;
-    
-    background-color: #f2f2f2;
->>>>>>> 72f2ca0c98ca043a2285e9d5a85641c058c2faa6
 }
